@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
+
 
 @Component({
   selector: 'app-home',
@@ -7,24 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  // Is a user logged in?
-  authenticated: boolean;
-  // The user
-  user: any;
-
-  constructor() { }
-
-  ngOnInit() {
-    this.authenticated = false;
-    this.user = {};
+  constructor(private authService: AuthService) { }
+  ngOnInit() { 
   }
-
-  signIn(): void {
-    // Temporary
-    this.authenticated = true;
-    this.user = {
-      displayName: 'Adele Vance',
-      email: 'AdeleV@contoso.com'
-    };
+  async signIn(): Promise<void> {
+    if(this.authService.authenticated){
+        return ;
+    }else
+    {
+    await this.authService.signIn();
+    }
   }
+  
 }

@@ -8,6 +8,9 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 library.add(faExternalLinkAlt);
 library.add(faUserCircle);
+//Azure Graph
+import { MsalModule } from '@azure/msal-angular';
+import { OAuthSettings } from '../oauth';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,7 +31,10 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MsalModule.forRoot({
+      clientID: OAuthSettings.appId
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
