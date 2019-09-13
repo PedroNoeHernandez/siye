@@ -1,0 +1,11 @@
+<div class="row justify-content-center" ><!--Justify center pertenece a bootstrap-->
+    <div *ngFor ="let app of apps; index as i; " class="card">
+        <a href={{app.urlApp}} (mouseover)="select = true">
+            <img src={{app.imageApp}} alt={{app.nameApp}}>
+            <p>{{app.nameApp}}</p>
+        </a>
+    </div>
+</div>
+<div class="container justify-content-center">
+    <div *ngIf="select" class="card justify-content-center"> a se mamao!</div>
+</div>

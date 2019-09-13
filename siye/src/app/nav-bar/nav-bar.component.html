@@ -7,23 +7,11 @@
       </button>
       <div class="collapse navbar-collapse" [class.show]="showNav" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a routerLink="/" class="nav-link" routerLinkActive="active">Home</a>
-          </li>
           <li *ngIf="authService.authenticated" class="nav-item">
             <a routerLink="/calendar" class="nav-link" routerLinkActive="active">Calendar</a>
           </li>
         </ul>
         <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.microsoft.com/graph/overview" target="_blank">Intranet</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.microsoft.com/graph/overview" target="_blank">Ofice365</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://docs.microsoft.com/graph/overview" target="_blank">Calendario</a>
-          </li>
           <li *ngIf="authService.authenticated" ngbDropdown placement="bottom-right" class="nav-item">
             <a ngbDropdownToggle id="userMenu" class="nav-link" href="javascript:undefined" role="button" aria-haspopup="true"
               aria-expanded="false">

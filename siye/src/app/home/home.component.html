@@ -1,20 +1,4 @@
-<div id="wrapper">
-    <section id="bloque1">
 
-    </section>
-    <div id="bloque2" class="container">
-    <div class="jumbotron ">
-        <img  src="../../assets/img/siyelogo.png" alt="SIYE" height="100px" >
-        <p  *ngIf="!authService.authenticated" class="lead">Logeate para comenzar</p>
-        <div *ngIf="authService.authenticated; then welcomeUser else signInPrompt"></div>
-        <ng-template #welcomeUser>
-        <h4>Welcome {{ authService.user.displayName }}!</h4>
-        <p>Now you can use the side bar</p>
-        </ng-template>
-        <ng-template #signInPrompt>
-        <a href="javascript:undefined" class="btn btn-primary btn-large" role="button" (click)="signIn()">Click here to sign in</a>
-        </ng-template>
-    </div>
-</div>
-    <section id="bloque3"></section>
+<div class="container">
+    <app-home-card></app-home-card>
 </div>

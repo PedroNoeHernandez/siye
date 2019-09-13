@@ -18,6 +18,13 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { AlertsComponent } from './alerts/alerts.component';
 import { FooterComponent } from './footer/footer.component';
+import { TableCardComponent } from './table-card/table-card.component';
+import { AtributeCardComponent } from './atribute-card/atribute-card.component';
+import { DatabasesComponent } from './databases/databases.component';
+import { FormComponentAtributeComponent } from './form-component-atribute/form-component-atribute.component';
+import { FormComponentTableComponent } from './form-component-table/form-component-table.component';
+import { FormModalInputComponent } from './form-modal-input/form-modal-input.component';
+import { HomeCardComponent } from './home-card/home-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,14 @@ import { FooterComponent } from './footer/footer.component';
     NavBarComponent,
     HomeComponent,
     AlertsComponent,
-    FooterComponent
+    FooterComponent,
+    TableCardComponent,
+    AtributeCardComponent,
+    DatabasesComponent,
+    FormComponentAtributeComponent,
+    FormComponentTableComponent,
+    FormModalInputComponent,
+    HomeCardComponent
   ],
   imports: [
     BrowserModule,

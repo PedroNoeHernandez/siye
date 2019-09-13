@@ -1,0 +1,23 @@
+.card img{
+    height: 70px;
+}
+.card a{
+    color: #003D79;
+}
+.card{
+    text-align: center;
+    height: 110px;
+    width: 110px;
+    margin-left: 1%;
+}
+.card a:hover{
+    height: 101%;
+    width: 101%;
+    color: white;
+    background: #003D79;
+}
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
