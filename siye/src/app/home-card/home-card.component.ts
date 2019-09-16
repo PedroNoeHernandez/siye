@@ -15,7 +15,8 @@ export class HomeCardComponent implements OnInit {
     {nameApp:'Forms',urlApp:'https://forms.office.com/',imageApp:'../../assets/img/LogosHome/forms.png'},
     {nameApp:'Sitio Web',urlApp:'https://canada.unam.mx/es/idiomas/',imageApp:'../../assets/img/LogosHome/logoUnamCanada.png'},
     {nameApp:'Calendario',urlApp:'https://canada.unam.mx/intranet/calendario/',imageApp:'../../assets/img/LogosHome/logoUnamCanada.png'},
-    {nameApp:'Outlook',urlApp:'https://outlook.office365.com/mail/inbox',imageApp:'../../assets/img/LogosHome/Outlooklogo.png'}
+    {nameApp:'Outlook',urlApp:'https://outlook.office365.com/mail/inbox',imageApp:'../../assets/img/LogosHome/Outlooklogo.png'},
+    {nameApp:'Bases de datos',urlApp:'/databases',imageApp:'../../assets/img/LogosHome/graph.png'},
   ];
   constructor() { }
 
