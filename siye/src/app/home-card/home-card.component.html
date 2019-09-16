@@ -1,11 +1,128 @@
 <div class="row justify-content-center" ><!--Justify center pertenece a bootstrap-->
     <div *ngFor ="let app of apps; index as i; " class="card">
-        <a href={{app.urlApp}} (mouseover)="select = true">
+        <a href={{app.urlApp}} (mouseover)="select = i">
             <img src={{app.imageApp}} alt={{app.nameApp}}>
             <p>{{app.nameApp}}</p>
         </a>
     </div>
 </div>
+<!-- Intranet-->
 <div class="container justify-content-center">
-    <div *ngIf="select" class="card justify-content-center"> a se mamao!</div>
+    <div *ngIf ="select == 0" class="row">
+        <div class="col-12 col-sm-6">
+            <h2>Intranet</h2>
+            <img class="contain" src="../../assets/img/homeApps/intranet.PNG" alt="https://canada.unam.mx/intranet">
+        </div>
+        <div class="col-12 col-sm-6">
+            <p>La intranet es un portal diseñado para comparir información organizacional que compete a varias áreas</p>
+            <ul>Encontraras documentos y materiales como:
+                <li>Manuales</li>
+                <li>Plantillas</li>
+                <li>Formularios</li>
+                <li>Galerías</li>
+                <li>Calendarios</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--OneDrive-->
+<div class="container justify-content-center">
+    <div *ngIf ="select == 1" class="row">
+        <div class="col-12 col-sm-6">
+            <h2>OneDrive</h2>
+            <img class="contain" src="../../assets/img/homeApps/oneDrive.PNG" alt="">
+        </div>
+        <div class="col-12 col-sm-6 ">
+            <p>OneDrive te sirve como un espacio de almacenamiento personal en la nube permitiendote:</p>
+            <ul>
+                <li>Consultar tu información 24/7</li>
+                <li>Sincronizar con tu equipo de cómputo</li>
+                <li>Compartir archivos</li>
+                <li>Edición online colavorativa</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Dashboard-->
+<div class="container justify-content-center">
+    <div *ngIf ="select == 2" class="row">
+        <div class="col-12 col-sm-6">
+            <h2>Dashboard</h2>
+            <img class="contain" src="../../assets/img/homeApps/dashboard.PNG" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <p>Te permite previsualizar de manera general los datos de la base de datos local</p>
+            <ul>
+                <li>Totales</li>
+                <li>Crecimiento</li>
+                <li>Indicadores</li>
+                <li>Proyecciones</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Forms-->
+<div class="container justify-content-center">
+    <div *ngIf ="select == 3" class="row">
+        <div class="col-12 col-sm-6">
+            <h2>Microsoft Forms</h2>
+            <img class="contain" src="../../assets/img/homeApps/Forms.PNG" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <p>Crea formularios increibles</p>
+            <ul>
+                <li>Comparte de forma sencilla</li>
+                <li>Visualiza estadísticas en tiempo real</li>
+                <li>Siempre disponible en tu OneDrive</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Sitio web-->
+<div class="container justify-content-center">
+    <div *ngIf ="select == 4" class="row">
+        <div class="col-12 col-sm-6">
+            <h2>Sitio Web</h2>
+            <img class="contain" src="../../assets/img/homeApps/sitioWeb.PNG" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <p>También la conocemos como extranet</p>
+            <ul>
+                <li>Publicaciones</li>
+                <li>Información para nuestro público</li>
+                <li>Divulgación cultural</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--Calendario-->
+<div class="container justify-content-center">
+        <div *ngIf ="select == 5" class="row">
+            <div class="col-12 col-sm-6">
+                <h2>Calendario</h2>
+                <img class="contain" src="../../assets/img/homeApps/calendario.PNG" alt="">
+            </div>
+            <div class="col-12 col-sm-6">
+                <p>Nuestra herramienta local para publicar eventos internos y externos</p>
+            </div>
+        </div>
+</div>
+<!--Outlook-->
+<div class="container justify-content-center">
+    <div *ngIf ="select == 6" class="row">
+        <div class="col-12 col-sm-6">
+            <h2>Outlook</h2>
+            <img class="contain" src="../../assets/img/homeApps/Outlook.PNG" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <p>Correo electrónico de categoría empresarial </p>
+            <ul>
+                <li>Administrador de correo electrónico</li>
+                <li>Administración de calendario</li>
+                <li>Agenda</li>
+            </ul>
+        </div>
+    </div>
 </div>

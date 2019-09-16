@@ -21,3 +21,18 @@
     margin-bottom: 20px;
     align-items: center;
 }
+.contain{
+    object-fit: contain;
+}
+.col-sm-6 img{
+    max-width: 100%;
+}
+.col-sm-6 h2{
+    text-align: center;
+}
+.col-sm-6{
+    text-align: left;
+}
+li{
+    list-style-type: circle;
+}
