@@ -1,4 +1,4 @@
-<div *ngIf="!autenticate" class="container">
+<div *ngIf="!authService.authenticated" class="container">
     <div class="card row">
         <div class="col-6">
         <img src="../../assets/img/LogosHome/logoUnamCanada.png" alt="">
@@ -7,4 +7,8 @@
             <p>Logueate para poder visualizar este portal <i class="material-icons">arrow_upward</i></p>
         </div>
     </div>
+</div>
+<div *ngIf="authService.authenticated">
+<p>funciona!!!!!</p>
+    
 </div>
